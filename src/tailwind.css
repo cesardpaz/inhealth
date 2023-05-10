@@ -1,6 +1,26 @@
 font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Montserrat', sans-serif;
 
+@font-face {
+    font-family: 'Avenir Next LT Pro Bold';
+    src: url('../font/AvenirNextLTPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Regular';
+    src: url('../font/AvenirNextLTPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Demi';
+    src: url('../font/AvenirNextLTPro-Demi.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro Demi Italic';
+    src: url('../font/AvenirNextLTPro-DemiIt.otf') format('opentype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,4 +35,20 @@ font-family: 'Montserrat', sans-serif;
     background-image: url(../img/dfr.png);
     background-size: cover;
     background-position: top;
+}
+
+.avenir-bold {
+    font-family: 'Avenir Next LT Pro Bold', sans-serif;
+}
+
+.avenir-regular {
+    font-family: 'Avenir Next LT Pro Regular', sans-serif;
+}
+
+.avenir-italic {
+    font-family: 'Avenir Next LT Pro Demi Italic', sans-serif;
+}
+
+.avenir-demi {
+    font-family: 'Avenir Next LT Pro Demi', sans-serif;
 }

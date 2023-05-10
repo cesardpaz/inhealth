@@ -4,7 +4,7 @@
         <div class="flex justify-between items-center px-12">
             <a href="">
                 <figure>
-                    <img class="w-auto h-20" src="<?php echo INHEALTH_DIR_URI . 'public/img/logo.png' ?>" alt="logo">
+                    <img class="w-auto h-20" src="<?php echo INHEALTH_DIR_URI . 'public/img/logoheader.png' ?>" alt="logo">
                 </figure>
             </a>
 
@@ -25,10 +25,10 @@
 
     <div class="container w-1240p max-w-full mx-auto px-4">
         <div class="text-white">
-            <h2 class="text-6xl lg:text-8xl font-bold ">Atención temprana</h2>
-            <p class="text-2xl lg:text-4xl mt-4">Para una sociedad en la que hablemos de convivencia.</p>
-            <div class="mt-4">
-                <a class="inline-block bg-secondary text-xl lg:text-2xl rounded-full px-6 py-3" href="">Quiero recibir información</a>
+            <h2 class="text-6xl lg:text-8xl font-regular font-barlow">Atención temprana</h2>
+            <p class="text-2xl lg:text-3xl mt-5 avenir-italic">Para una sociedad en la que hablemos de convivencia.</p>
+            <div class="mt-5">
+                <a class="inline-block bg-secondary text-xl lg:text-2xl rounded-full px-6 py-3 avenir-demi" href="">Quiero recibir información</a>
             </div>
         </div>
     </div>

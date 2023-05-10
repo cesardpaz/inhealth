@@ -33,6 +33,14 @@ module.exports = {
         width: {
           '1240p': '1240px',
         },
+        fontFamily: {
+          'barlow': ['Barlow Condensed', 'sans-serif'],
+
+          'montserrat': ['Montserrat', 'sans-serif'],
+        },
+        fontSize: {
+          '40p' : '40px',
+        },
       },
     },
     plugins: [],
