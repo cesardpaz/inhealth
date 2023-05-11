@@ -16,6 +16,14 @@ class INHEALTH_Master {
         require_once INHEALTH_DIR_PATH . 'includes/class-inhealth-support.php';
         require_once INHEALTH_DIR_PATH . 'admin/class-inhealth-admin.php';
         require_once INHEALTH_DIR_PATH . 'public/class-inhealth-public.php';
+
+        /* metaboxio */
+        require_once INHEALTH_DIR_PATH . 'helpers/metaboxio/meta-box/meta-box.php';
+        require_once INHEALTH_DIR_PATH . 'helpers/metaboxio/meta-box-group/meta-box-group.php';
+        require_once INHEALTH_DIR_PATH . 'helpers/metaboxio/meta-box-conditional-logic/meta-box-conditional-logic.php';
+        require_once INHEALTH_DIR_PATH . 'helpers/metaboxio/mb-term-meta/mb-term-meta.php';
+        require_once INHEALTH_DIR_PATH . 'helpers/metaboxio/mb-settings-page/mb-settings-page.php';
+        require_once INHEALTH_DIR_PATH . 'helpers/metaboxio/panel.php';
        
     }
     private function load_instances() {

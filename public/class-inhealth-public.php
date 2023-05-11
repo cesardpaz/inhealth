@@ -11,6 +11,6 @@ class INHEALTH_Public {
     }
     
     public function enqueue_scripts() {
-        
+        wp_enqueue_script( 'inhealt_public_js', INHEALTH_DIR_URI . 'public/js/public_inhealth.js', [], filemtime(INHEALTH_DIR_PATH . 'public/js/public_inhealth.js'), true );
     }
 }
