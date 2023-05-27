@@ -1,0 +1,17 @@
+{
+    "name": "cesardpaz/inhealth",
+    "autoload": {
+        "psr-4": {
+            "Cesardpaz\\Inhealth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "César De Paz",
+            "email": "cesardpaz@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}

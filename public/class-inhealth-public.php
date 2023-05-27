@@ -12,5 +12,11 @@ class INHEALTH_Public {
     
     public function enqueue_scripts() {
         wp_enqueue_script( 'inhealt_public_js', INHEALTH_DIR_URI . 'public/js/public_inhealth.js', [], filemtime(INHEALTH_DIR_PATH . 'public/js/public_inhealth.js'), true );
+
+        $inhealth_Public = [
+            'url'   => admin_url( 'admin-ajax.php' ),
+            'nonce' => wp_create_nonce( 'inhealth_seg' ),
+        ];
+        wp_localize_script( 'inhealt_public_js', 'inhealth_Public', $inhealth_Public );
     }
 }

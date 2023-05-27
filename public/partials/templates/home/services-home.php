@@ -5,35 +5,35 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 mt-10 border border-solid border-primary rounded-xl px-4 lg:px-40 py-24 gap-12 avenir-regular">
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico1.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Fonoaudiologia</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Fonoaudiologia</h3>
             </div>
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico2.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Kinisielogía y Fisioterapía</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Kinisielogía y Fisioterapía</h3>
             </div>
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico3.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Psicomotricidad</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Psicomotricidad</h3>
             </div>
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico4.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Psicología terapéutica para niños</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Psicología terapéutica para niños</h3>
             </div>
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico5.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Pediatría</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Pediatría</h3>
             </div>
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico6.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Psicoterapia educativa familiar</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Psicoterapia educativa familiar</h3>
             </div>
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico7.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Psicopedagogía</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Psicopedagogía</h3>
             </div>
             <div>
                 <figure class="flex justify-center"><img class="w-16 h-auto" src="<?php echo INHEALTH_DIR_URI . 'public/img/ico8.png'; ?>" alt="icon" loading="lazy"></figure>
-                <h3 class="text-center w-full mt-1.5">Apoyo a la integración familiar</h3>
+                <h3 class="text-center w-full mt-1.5 text-17p">Apoyo a la integración familiar</h3>
             </div>
         </div>
     </div>

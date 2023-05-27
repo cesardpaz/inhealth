@@ -17,3 +17,5 @@ function run_inhealth_master() {
 }
 
 run_inhealth_master();
+
+require __DIR__ . '/vendor/autoload.php';

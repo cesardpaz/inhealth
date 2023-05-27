@@ -44,6 +44,7 @@ font-family: 'Montserrat', sans-serif;
 
 .avenir-bold {
     font-family: 'Avenir Next LT Pro Bold', sans-serif;
+    font-weight: 700;
 }
 
 .avenir-regular {
@@ -74,4 +75,8 @@ font-family: 'Montserrat', sans-serif;
 .splide__pagination__page.is-active {
     transform: scale(1.1);
     background-color: #67277a;
+}
+
+.res-form {
+    color: #706b6b;
 }

@@ -40,6 +40,8 @@ module.exports = {
         },
         fontSize: {
           '40p' : '40px',
+          '17p' : '17px',
+          '11p' : '11px',
         },
       },
     },

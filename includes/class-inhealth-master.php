@@ -16,6 +16,7 @@ class INHEALTH_Master {
         require_once INHEALTH_DIR_PATH . 'includes/class-inhealth-support.php';
         require_once INHEALTH_DIR_PATH . 'admin/class-inhealth-admin.php';
         require_once INHEALTH_DIR_PATH . 'public/class-inhealth-public.php';
+        require_once INHEALTH_DIR_PATH . 'includes/class-inhealth-ajax-public.php';
 
         /* metaboxio */
         require_once INHEALTH_DIR_PATH . 'helpers/metaboxio/meta-box/meta-box.php';
@@ -27,10 +28,11 @@ class INHEALTH_Master {
        
     }
     private function load_instances() {
-        $this->charger = new INHEALTH_Charger;
-        $this->inhealth_admin  = new INHEALTH_Admin( $this->get_theme_name() );
-        $this->inhealth_public = new INHEALTH_Public( $this->get_theme_name() );
+        $this->charger          = new INHEALTH_Charger;
+        $this->inhealth_admin   = new INHEALTH_Admin( $this->get_theme_name() );
+        $this->inhealth_public  = new INHEALTH_Public( $this->get_theme_name() );
         $this->inhealth_support = new INHEALTH_Theme_Support;
+        $this->inhealth_ajax    = new INHEALTH_Ajax_Public;
     }
     private function define_admin_hooks() {
         $this->charger->add_action( 'admin_enqueue_scripts', $this->inhealth_admin, 'enqueue_styles' );
@@ -42,6 +44,9 @@ class INHEALTH_Master {
     private function define_public_hooks() {
         $this->charger->add_action( 'wp_enqueue_scripts', $this->inhealth_public, 'enqueue_styles' );
         $this->charger->add_action( 'wp_footer', $this->inhealth_public, 'enqueue_scripts' );
+        //ajax send_Email
+        $this->charger->add_action( 'wp_ajax_send_email', $this->inhealth_ajax, 'send_email' );
+        $this->charger->add_action( 'wp_ajax_nopriv_send_email', $this->inhealth_ajax, 'send_email' );
     }
     public function run() {
         $this->charger->run();
