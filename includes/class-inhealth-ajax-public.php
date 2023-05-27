@@ -19,13 +19,13 @@ class INHEALTH_Ajax_Public {
                 $mail->isSMTP(); // Enviar usando SMTP
                 $mail->Host       = 'smtp.mail.yahoo.com'; // Configura el servidor SMTP para enviar
                 $mail->SMTPAuth   = true; // Habilita la autenticación SMTP
-                $mail->Username   = 'cesardpaz@yahoo.es'; // Nombre de usuario SMTP
-                $mail->Password   = 'xgchiantmugskkop'; // Contraseña SMTP
+                $mail->Username   = ''; // Nombre de usuario SMTP
+                $mail->Password   = ''; // Contraseña SMTP
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Habilita la encriptación TLS; `PHPMailer::ENCRYPTION_SMTPS` también aceptado
                 $mail->Port       = 587; // Puerto TCP para conectar, usa 465 para `PHPMailer::ENCRYPTION_SMTPS` arriba
 
                 // Destinatarios
-                $mail->setFrom('cesardpaz@yahoo.es', 'Mailer');
+                $mail->setFrom('', 'Mailer');
                 $mail->addAddress('multiples_expresiones@yahoo.com.ar', $name); // Añadir un destinatario
 
                 $mail->isHTML(true);

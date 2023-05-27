@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
 
-<?php get_template_part( 'public/partials/templates/home/header', 'home' ); ?>
+<?php
+
+// TODO: Added to home
+get_template_part( 'public/partials/templates/home/header', 'home' ); ?>
 
 <?php get_template_part( 'public/partials/templates/home/description', 'home' ); ?>
 
