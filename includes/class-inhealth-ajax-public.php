@@ -7,6 +7,8 @@ class INHEALTH_Ajax_Public {
     public function send_email() {
         if( isset( $_POST[ 'action' ] ) ) {
 
+            // TODO: remove and added fake send
+
             $name    = $_POST['name'];
             $email   = $_POST['email'];
             $message = $_POST['message'];
@@ -14,19 +16,17 @@ class INHEALTH_Ajax_Public {
             $mail = new PHPMailer(true);
 
             try {
-                // Configuración del servidor
-                $mail->SMTPDebug = 2; // Habilita la salida de depuración detallada
-                $mail->isSMTP(); // Enviar usando SMTP
-                $mail->Host       = 'smtp.mail.yahoo.com'; // Configura el servidor SMTP para enviar
-                $mail->SMTPAuth   = true; // Habilita la autenticación SMTP
-                $mail->Username   = ''; // Nombre de usuario SMTP
-                $mail->Password   = ''; // Contraseña SMTP
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Habilita la encriptación TLS; `PHPMailer::ENCRYPTION_SMTPS` también aceptado
-                $mail->Port       = 587; // Puerto TCP para conectar, usa 465 para `PHPMailer::ENCRYPTION_SMTPS` arriba
+                $mail->SMTPDebug = 2;
+                $mail->isSMTP();
+                $mail->Host       = 'smtp.mail.yahoo.com';
+                $mail->SMTPAuth   = true;
+                $mail->Username   = '';
+                $mail->Password   = '';
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                $mail->Port       = 587;
 
-                // Destinatarios
                 $mail->setFrom('', 'Mailer');
-                $mail->addAddress('multiples_expresiones@yahoo.com.ar', $name); // Añadir un destinatario
+                $mail->addAddress('multiples_expresiones@yahoo.com.ar', $name);
 
                 $mail->isHTML(true);
                 $mail->Subject = 'Formulario Web -' . $name;

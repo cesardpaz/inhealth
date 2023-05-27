@@ -11,6 +11,7 @@ get_template_part( 'public/partials/templates/home/header', 'home' ); ?>
 <?php get_template_part( 'public/partials/templates/home/services', 'home' ); ?>
 
 
+<!-- TODO: añadir a un template part -->
 <section class="lg:h-1000p pb-28 lg:pb-0">
 
     <div class="container w-1240p max-w-full mx-auto px-4 relative -mt-60">
@@ -30,7 +31,7 @@ get_template_part( 'public/partials/templates/home/header', 'home' ); ?>
 
 </section>
 
-
+<!-- TODO: añadir a un template part -->
 <section class="lg:h-500p bg-gray-200 px-0 xl:px-40">
     <div class="container max-w-full w-1240p mx-auto px-4 relative">
         <div class="relative lg:absolute -top-24 lg:-top-48 w-full">
@@ -78,7 +79,7 @@ get_template_part( 'public/partials/templates/home/header', 'home' ); ?>
 
 </section>
 
-
+<!-- TODO: añadir a un template part -->
 <section class="bg-gray-200 lg:pt-10 pb-10 relative">
     <div class="container max-w-full w-1240p mx-auto px-4">
         <div class="flex justify-between flex-col lg:flex-row items-center">
